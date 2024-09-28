@@ -1,0 +1,57 @@
+﻿  hello.cpp
+E:\WorkSpace\Developers\C++\hello.cpp(9,11): error C2015: 常量中的字符太多
+  HelloWorld.cpp
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,9): warning C4129: “d”: 不可识别的字符转义序列
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): error C2679: 二元“>>”: 没有找到接受“const char [35]”类型的右操作数的运算符(或没有可接受的转换)
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(299,39): message : 可能是“std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_streambuf<char,std::char_traits<char>> *)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(295,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(void *&)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(291,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long double &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(287,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(double &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(283,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(float &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(279,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned __int64 &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(275,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(__int64 &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(271,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned long &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(267,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(263,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned int &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(255,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(int &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(251,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned short &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(219,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(short &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(215,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(bool &)”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(186,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::ios_base &(__cdecl *)(std::ios_base &))”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(181,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(176,39): message : 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_istream<char,std::char_traits<char>> &(__cdecl *)(std::basic_istream<char,std::char_traits<char>> &))”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(901,9): message : 或    “_Istr &&std::operator >>(_Istr &&,_Ty &&)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,56): message : “_Istr &&std::operator >>(_Istr &&,_Ty &&)”: 无法推导“__formal”的 模板 参数
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(888,31): message : 或    “std::basic_istream<char,_Traits> &std::operator >>(std::basic_istream<char,_Traits> &,unsigned char &)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,9): message : “初始化”: 无法从“const char [35]”转换为“unsigned char &”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(882,31): message : 或    “std::basic_istream<char,_Traits> &std::operator >>(std::basic_istream<char,_Traits> &,signed char &)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,9): message : “初始化”: 无法从“const char [35]”转换为“signed char &”
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(859,32): message : 或    “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,_Elem &)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,_Elem &)”: 模板 参数“_Elem”不明确
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : 可能是“const char [35]”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : 或    “char”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,_Elem &)”: 无法从“const char [35]”推导出“_Elem &”的 模板 参数
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(853,31): message : 或    “std::basic_istream<char,_Traits> &std::operator >>(std::basic_istream<char,_Traits> &,unsigned char *)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,9): message : “初始化”: 无法从“const char [35]”转换为“unsigned char *”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,9): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(848,31): message : 或    “std::basic_istream<char,_Traits> &std::operator >>(std::basic_istream<char,_Traits> &,signed char *)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,9): message : “初始化”: 无法从“const char [35]”转换为“signed char *”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,9): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\istream(843,32): message : 或    “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,_Elem *)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,_Elem *)”: 模板 参数“_Elem”不明确
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : 可能是“const char”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : 或    “char”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,_Elem *)”: 无法从“const char [35]”推导出“_Elem *”的 模板 参数
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(5311,32): message : 或    “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)”
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : “std::basic_istream<_Elem,_Traits> &std::operator >>(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)”: 无法从“const char [35]”推导出“std::basic_string<_Elem,_Traits,_Alloc> &”的 模板 参数
+E:\WorkSpace\Developers\C++\HelloWorld.cpp(8,2): message : 尝试匹配参数列表“(std::istream, const char [35])”时
+  jian.cc
+  testVS.cpp
+E:\WorkSpace\Developers\C++\testVS.cpp(6,30): error C2563: 在形参表中不匹配
+E:\WorkSpace\Developers\C++\testVS.cpp(6,30): error C2568: “,”: 无法解析函数重载
+E:\WorkSpace\Developers\C++\testVS.cpp(6,30): message : 可能是“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
+  Untitled3.cpp
+E:\WorkSpace\Developers\C++\Untitled3.cpp(4,1): fatal  error C1004: 发现意外的文件尾
+  While.cpp
+  未命名18874.cpp
+  正在生成代码...

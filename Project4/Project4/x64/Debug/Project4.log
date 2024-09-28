@@ -1,0 +1,2 @@
+﻿chartype.obj : error LNK2005: main 已经在 b.obj 中定义
+D:\WorkSpace\Developers\C++\Project4\x64\Debug\Project4.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
