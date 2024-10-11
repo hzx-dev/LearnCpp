@@ -1,64 +1,71 @@
 #include <iostream>
 #include <cmath>
+#include <limits>
 
 using namespace std;
 
-int gcd(int a, int b) { // 求最大公约数使用欧几里得算法
-    if (b == 0) {
-        return a;
-    } else {
-        return gcd(b, a % b);
-    }
+int gcd(int a, int b) {
+    if (b == 0) return a;
+    else return gcd(b, a % b);
 }
 
-bool output_by_youlishu(int x) {
-    int p = 0, q = 0;
-    for (int i = 1; i <= x; i++) {
-        if (x == i) {
-            p = 1;
-            q = i;
-            break;
-        } else if (x / i == (int)(x / i)) {
-            p = (int)x / i;
-            q = i;
-            break;
+bool youlishu(double v, int & p, int & q) {
+    double eps = numeric_limits<double>::epsilon();
+    if (abs(v - int(v)) < eps || abs(v - double(int(v + 0.5))) < eps) {
+        return true;
+    }
+    for (int q = 1; q < 10000; q++) {
+        int p = int(v * q + 0.5);
+        if (abs(v - double(p) / q) < eps) {
+            int g = gcd(p, q);
+            if (g > 1) {
+                p /= g;
+                q /= g;
+            }
+            return true;
         }
     }
-    if (p == 0 && q == 0) {
-        // 没有找到
-        return false;
-    }
-    // 要约分！！！
-    int g = gcd(p, q);
-    p /= g;
-    q /= g;
-    cout << p << "/" << q << endl;
-    return true;
+    return false;
 }
 
-int get_answer(int a, int b, int c) {
-    // 检查是否存在实数解
-    if ((b * b) - (4 * a * c) < 0) {
-        // 没有实数解
-        cout << "NO" << endl;
-        return 0;
-    } else {
-        // 存在实数解，继续
-        // a*x*x + b*x*x + c = 0;
-        double x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
-        double x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
-        // 由有理数的定义，存在唯一的两个整数 p 和 q, 满足 q > 0, gcd(p, q) = 1 (两数互质),且 v = p / q
-        double x = x1 > x2? x1 : x2;
-        if (!output_by_youlishu(x)) {
-            // x 可以被唯一表示为 q1 + q2 * sqrt(r) 的形式
-            
+void outputYoulishu(double v) {
+    int a, b;
+    youlishu(v, a, b);
+    if (b == 1) cout << a;
+    else cout << a << '/' << b;
+}
+
+int get_ans(int a, int b, int c) {
+    
+    int delta = b * b - 4 * a * c;
+    int p, q;
+
+    if (delta < 0) {cout << "NO" << endl; return 0;}
+    else {
+        double x = max(((-b) + sqrt(delta) / 2) * a, ((-b) - sqrt(delta) / 2) * a);
+        if (youlishu(x,p,q)) outputYoulishu(x);
+        else {
+            double q1 = -(b / (2 * a));
+            double q2 = (1 / (2 * a));
+            if (q2>0) if (youlishu(q1,p,q) && youlishu(q2,p,q)) {
+                if (q1 != 0) {outputYoulishu(q1);cout<<'+';}
+                double r = ((x - q1) / q2) * ((x - q1) / q2);
+                if(q2==1)cout<<"sqrt("<<int(r)<<")";
+                else if(int(q2) == q2)cout<<int(q2)<<"*sqrt("<<int(r)<<")";
+                else if(int(1/q2) == 1/q2)cout<<"sqrt("<<int(r)<<")/"<<int(1/q2);
+                else {int c,d;youlishu(q2,c,d);cout<<int(c)<<"*sqrt("<<int(r)<<")/"<<int(d);}
+            }
         }
     }
+
+    return 0;
 }
 
 int main()
 {
-    
+    int t, m;
+    cin >> t >> m;
+    while (t--) {int a,b,c;cin>>a>>b>>c;get_ans(a,b,c);cout<<endl;}
     
     return 0;
 }
