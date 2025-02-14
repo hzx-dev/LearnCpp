@@ -1,54 +1,30 @@
 #include <iostream>
-#include <string>
-#include <map>
+#include <algorithm>
 
 using namespace std;
 
+int s[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
 int main()
-{   
-    int k, j, g, n = 0;
-    cin >> k >> j >> g;
-    for (int i = 111; i <= 999; i++) {
-        if((int)j != j||(int)g != g || g > 987) continue;//如果b和c是小数或者c超过987了那就下一个，c>987的话直接break掉也行
+{
+    int a, b, c;
 
-        string s = to_string(i);
-        if (s.find('0') != string::npos) continue;
-        int b = i * (j / k);
-        string sb = to_string(b);
-        if (sb.find('0') != string::npos ||
-            b >= 1000) continue;
-        int c = i * (g / k);
-        string sc = to_string(c);
-        if (sc.find('0') != string::npos ||
-            c >= 1000) continue;
-        string d = s + sb + sc;
-        map<char, int> chkdic = {
-            {'0', 0},
-            {'1', 0},
-            {'2', 0},
-            {'3', 0},
-            {'4', 0},
-            {'5', 0},
-            {'6', 0},
-            {'7', 0},
-            {'8', 0},
-            {'9', 0}
-        };
-        bool flag = true;
-        for (char ch : d) {
-            chkdic[ch]++;
-            if (chkdic[ch] > 1) {
-                flag = false;
-                break;
-            }
-        }
-        if (flag) {
-            cout << i << " " << b << " " << c << endl;
-            n++;
-        }
-    }
+    cin >> a >> b >> c;
 
-    if (n == 0) {
+    int flag = 1;
+
+    do {
+        int s1 = 100 * s[0] + s[1] * 10 + s[2];
+        int s2 = 100 * s[3] + s[4] * 10 + s[5];
+        int s3 = 100 * s[6] + s[7] * 10 + s[8];
+        // A : B : C
+        if (s1 * b == s2 * a && s2 * c == s3 * b) {
+            cout << s1 << " " << s2 << " " << s3 << endl;
+            flag = 0;
+        }
+    } while (next_permutation(s, s + 9));
+
+    if (flag) {
         cout << "No!!!" << endl;
     }
     

@@ -1,15 +1,32 @@
 {
     "configurations": [
         {
-            "name": "linux-gcc-x64",
+            "name": "MSCV",
             "includePath": [
-                "${workspaceFolder}/**"
+                "d:/WorkSpace/Developers/C++/**"
             ],
-            "defines": [],
-            "cStandard": "${default}",
-            "cppStandard": "${default}",
-            "intelliSenseMode": "linux-gcc-x64",
-            "compilerPath": "/bin/g++"
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "windows-msvc-x64",
+            "compilerPath": "c:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx86\\x86\\cl.exe",
+            "compilerArgs": [
+                "-O2"
+            ],
+            "compilerPathInCppPropertiesJson": "cl.exe",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "d:/WorkSpace/Developers/C++/**",
+                    "d:/WorkSpace/Developers/C++"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4
