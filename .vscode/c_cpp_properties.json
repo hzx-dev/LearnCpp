@@ -9,8 +9,7 @@
             ],
             "windowsSdkVersion": "10.0.22000.0",
             "cStandard": "c17",
-            "cppStandard": "c++14",
-            "intelliSenseMode": "${default}",
+            "cppStandard": "c++17",
             "compilerPath": "/usr/bin/g++",
             "compilerArgs": [
                 "-O2"

@@ -1,4 +1,0 @@
-﻿  hello_world.cpp
-D:\WorkSpace\Developers\C++\MyFirstProject\MyFirstProject\hello_world.cpp(18,2): error C2065: “cout”: 未声明的标识符
-D:\WorkSpace\Developers\C++\MyFirstProject\MyFirstProject\hello_world.cpp(18,22): error C3688: 文本后缀“结束”无效；未找到文文本运算符或文本运算符模板“operator """"结束”
-D:\WorkSpace\Developers\C++\MyFirstProject\MyFirstProject\hello_world.cpp(19,2): error C2143: 语法错误: 缺少“;”(在“return”的前面)

@@ -92,7 +92,8 @@
     "execution": "cpp",
     "locale": "cpp",
     "print": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "climits": "cpp"
   },
   "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.cCompilerPath": "gcc",
