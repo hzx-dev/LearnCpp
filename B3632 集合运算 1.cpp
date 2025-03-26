@@ -34,6 +34,41 @@ int main() {
     }
     cout << endl;
 
+    for (int i = 0; i <= 63; i++) {
+        if (a[i] != 1) cout << i << ' ';
+    }
+
+    cout << endl;
+    bool fl = 1;
+    for (int i = 0; i <= 63; i++) {
+        if (!a[i] && b[i]) {
+            fl = false;
+            cout << 0 << endl;
+            break;
+        } else if (a[i] && !b[i]) {
+            fl = false;
+            cout << 0 << endl;
+            break;
+        }
+    }
+
+    if (fl && x == y) cout << 1 << endl;
+    fl = true;
+    for (int i = 0; i <= 63; i++) {
+        if (a[i]) {
+            if (!b[i]) {
+                fl = false;
+                cout << 0 << endl;
+                break;
+            }
+        }
+    }
+
+    if (fl) {
+        cout << 1 << endl;
+    }
+
+    cout << a[0] << endl;
 
     return 0;
 }
